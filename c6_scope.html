@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .container {
+            background-color: black;
+            height: 70vh;
+            width: 40vw;
+            border-radius: 20px;
+            border-style: solid;
+            margin-top: 10vh;
+            margin-left: 25vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .number {
+            background-color: #19A7CE;
+            color: black;
+            width: 100%;
+        }
+
+        button {
+            height: 44px;
+            width: 100%;
+            cursor: pointer;
+            border: none;
+            font-size: 1vw;
+        }
+
+        button:hover {
+            background-color: #61F2F5;
+        }
+
+        button:active {
+            background-color: rgb(218, 218, 218);
+        }
+
+        .orange {
+            background-color: orange;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+
+        .number-keys {
+            background-color: #2a2a2a;
+
+            color: rgb(255, 255, 255);
+            background-color: #454545;
+            border: none;
+        }
+
+        textarea {
+            resize: none;
+            scroll-behavior: auto;
+        }
+
+        textarea::-webkit-scrollbar {
+            opacity: 1;
+            width: 5px;
+            background-color: white;
+        }
+
+        #display-box {
+            background-color: black;
+            height: 30%;
+            width: 96%;
+            text-align: right;
+            padding-left: 1vw;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 2vw;
+            font-size: 32px;
+        }
+
+        .submit-button-one {
+            width: 80%;
+            margin: 10%;
+        }
+    </style>
+    <!-- script -->
+    <script>
+     function relationOperater() {
+        let x = document.getElementById("input-one").value;
+        let y = document.getElementById("input-two").value;
+
+        let z = Number(x) += Number(y)//!= , ==
+console.log
+        document.getElementById("display-box").innerHTML = "is X equal to y => " + z 
+     }
+        
+    </script>
+</head>
+
+<body style="background-color: lightgray">
+    <!-- background -->
+    <div class="container">
+        <!-- result box -->
+        <textarea id="display-box" type="text" readonly></textarea>
+        <input id="input-one" type="text" style="width: 98%; height: 44px; font-size: 24px" id="input-two" type="text"
+            style="width: 98%; height: 44px; font-size: 24px" />
+            <input id="input-two" type="text" style="width: 98%; height: 44px; font-size: 24px" id="input-two" type="text"
+            style="width: 98%; height: 44px; font-size: 24px" />
+
+        <!-- button -->
+        <div class="submit-button-one">
+            <button class="number" onclick="relationOperater()" value="INPUT OUTPUT">
+                INPUT OUTPUT
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

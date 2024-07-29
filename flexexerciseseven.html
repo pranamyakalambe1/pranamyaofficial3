@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* child-one */
+        .child-one {
+            background-color: blue;
+            height: 33.3vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* child-two */
+        .child-two {
+            background-color: aqua;
+            height: 33.3vh;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        /* child-three */
+        .child-three {
+            background-color: blueviolet;
+            height: 33.3vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /*  (child-one)-(section-one) */
+        .section-one {
+            background-color: blue;
+            width: 50vw;
+        }
+
+        /*  (child-one)-(section-two) */
+        .section-two {
+            background-color: brown;
+            width: 50vw;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* (child-one)-(section-two)-(part-one) */
+        .section-two-one {
+            background-color: burlywood;
+            width: 30vw;
+        }
+
+        /* (child-two)-(section-one) */
+        .child-two-one {
+            background-color: cadetblue;
+            width: 50vw;
+        }
+
+        /* (child-three)-(section-one) */
+        .child-three-one {
+            background-color: chartreuse;
+            width: 25vw;
+        }
+    </style>
+</head>
+
+<body style="margin: 0%;">
+    <!-- main -->
+    <div class="main">
+        <!-- child-one -->
+        <div class="child-one">
+            <!-- (child-one)-(section-one) -->
+            <div class="section-one"></div>
+            <!-- (child-one)-(section-two) -->
+            <div class="section-two">
+                <!-- (child-one)-(section-two)-(part-one) -->
+                <div class="section-two-one"></div>
+            </div>
+        </div>
+        <!-- child-two -->
+        <div class="child-two">
+            <!-- (child-two)-(section-one) -->
+            <div class="child-two-one"></div>
+        </div>
+        <!-- child-three -->
+        <div class="child-three">
+            <!-- (child-three)-(section-one) -->
+            <div class="child-three-one"></div>
+        </div>
+    </div>
+</body>
+
+</html>
